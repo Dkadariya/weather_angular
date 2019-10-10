@@ -18,8 +18,8 @@ export class WeatherServices {
         return this._http.get(this.state_url, { params });
     }
 
-    getZipWeather(){
-        const params = new HttpParams().set('zip', '45324').set('appid', 'dee1f31027f8331288a5bbe93c7ccf3f');
+    getZipWeather(zip){
+        const params = new HttpParams().set('zip', zip).set('appid', 'dee1f31027f8331288a5bbe93c7ccf3f');
         return this._http.get(this.zip_url, { params });
     }
 }

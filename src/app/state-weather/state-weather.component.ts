@@ -10,7 +10,8 @@ export class StateWeatherComponent {
   weather;
   constructor(weatherServices: WeatherServices) {
     weatherServices.getStateWeather()
-    .subscribe(data => {this.weather = data['list']; });
+    .subscribe(data => {this.weather = data['list']; },
+    error => {console.log(error); });
   }
   trig() {
     console.log(this.title);

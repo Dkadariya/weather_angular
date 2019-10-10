@@ -1,2 +1,11 @@
-<p>zip-weather works!</p>
-{{weather.weather[0].main}}
+<input type="text" id='bb_input' class="form-control" [(ngModel)]="zip" placeholder="Enter a zipcode">
+<button (click)="getWeather()" class="btn btn-dark"> Submit </button>
+<br>
+<br>
+<ul>
+<li>City Name: {{weather.name}}</li>
+<li>Weather: {{weather.weather[0].main}}</li>
+<li>Wind Speed: {{weather.wind.speed}}</li>
+<li>Humidity: {{weather.main.humidity}}</li>
+<li>Temprature: {{weather.main.temp}}</li>
+</ul>

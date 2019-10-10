@@ -8,11 +8,11 @@ import { AppComponent } from './app.component';
 import { WeatherServices } from './weather_services/weather-services.service';
 import { StateWeatherComponent } from './state-weather/state-weather.component';
 import { ZipWeatherComponent } from './zip-weather/zip-weather.component';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
-const appRoutes = [
-  {path:'state',component:StateWeatherComponent},
-  {path:'zip',component:ZipWeatherComponent}
+const appRoutes: Routes = [
+  {path: 'state', component: StateWeatherComponent},
+  {path: 'zip', component: ZipWeatherComponent}
 ]
 
 @NgModule({

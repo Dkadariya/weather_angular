@@ -6,36 +6,7 @@
 <!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<br>
-<br>
-<div class="container">
-  <input type="text" id='bb_input' class="form-control" [(ngModel)]="title" placeholder="Enter the bbox coordinates...">
-  <button (click)="trig()" class="btn btn-dark"> Submit </button>
-  <br>
-  <br>
-  <div class="mx-auto">
-<h2>Weather report of cities in Ohio:</h2></div>
-  <table class="table table-dark">
-  <thead class="thead-light"> 
-  <th> City </th>
-  <th> Weather </th>
-  <th> wind Speed </th>
-  <th> Temprature</th>
-  <th> Humidity</th></thead>
-<tr *ngFor="let city of weather">
-<td>{{city.name}}</td>
-<td>{{city.weather[0].description}}</td>
-<td>{{city.wind.speed}}</td>
-<td>{{city.main.temp}}
-<!-- <div *ngIf="user.address.state==='TN';then tennessee else other">
-// {{user.address.state}}
-</div>
-<ng-template #tennessee>{{user.address.state}}</ng-template>
-<ng-template #other>Other</ng-template> -->
-</td>
-<td>{{city.main.humidity}}</td>
-  </table>
-</div>
+
   <!-- {{weather}} -->
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
@@ -47,5 +18,8 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 
+<header><h1>Weather Services</h1></header>
 
 <router-outlet></router-outlet>
+
+<footer>copyright @Dipesh Kadariya 2019</footer>

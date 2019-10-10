@@ -1,0 +1,9 @@
+#bb_input{
+    width: 30%;
+    display: inline-block;
+    margin-right: 1vw;
+}
+#weather_heading{
+    /* margin: auto 0px; */
+    align-self: center;
+}

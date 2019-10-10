@@ -8,7 +8,7 @@ export class WeatherServices {
     // private url:string= "http://api.openweathermap.org/data/2.5/weather";
     private url: string = "http://api.openweathermap.org/data/2.5/box/city";
     constructor(private _http: HttpClient) { }
-    getWeather() {
+    getStateWeather() {
         // const params = new HttpParams().set('zip','45324').set('appid','dee1f31027f8331288a5bbe93c7ccf3f');
         const params = new HttpParams().set('bbox', '-85,38,-80,41,10').set('appid', 'dee1f31027f8331288a5bbe93c7ccf3f');
         // let url = "http://mocker.ennate.academy/users";

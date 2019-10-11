@@ -1,12 +1,16 @@
+
+
 #bb_input{
     width: 30%;
     display: inline-block;
     margin-right: 1vw;
+    margin-left: 2%;
+    margin-top: 2%;
 }
 
 .w_details {
     background-color: #f7f7f7;
-    border: 1px solid #3c3b3b;
+    border: 1px solid #d5d5d5;
     border-radius: 20px;
     /* display: inline-block; */
     padding: 4%;
@@ -19,14 +23,19 @@
     font-weight: bold;
 }
 
-#w_weather {
-    margin-top: -6px;
+#w_icon {
+    height: 60px;
+    /* margin-left: -11px; */
+}
+#w_weather,#w_date_time {
+    margin-top: -4px;
 }
 
-#w_date_time{
-    margin-top: -6px;  
+#w_temp{
+    font-size: 45px;
+    margin-left: -8px;
 }
 
-#w_wind,#w_hum,#w_temp {
+#w_wind,#w_hum {
     float: right;
 }

@@ -23,5 +23,9 @@ export class ZipWeatherComponent {
       error => {console.log(error); } );
    }
 
+   toFaren(K:number){
+     return Math.round((K - 273.15) * (9/5) + 32);
+   }
+
 
 }

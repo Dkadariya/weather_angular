@@ -21,6 +21,6 @@ export class StateWeatherComponent {
     error => {console.log(error); });
   }
   trig() {
-    console.log(this.bbox);
+    console.log(this.qState);
   }
 }

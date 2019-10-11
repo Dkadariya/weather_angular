@@ -6,8 +6,11 @@
 
 <div id="w_name">{{weather?.name}}</div>
 <div id="w_date_time">{{fDate}}</div>
-<div id="w_weather">{{weather?.weather[0].main}}</div>
+<div id="w_weather">{{weather?.weather[0].description}}</div>
+
+<div id="w_temp"><img src='http://openweathermap.org/img/w/{{weather?.weather[0].icon}}.png' alt="" id="w_icon">
+    {{toFaren(weather?.main.temp)}}<span>&#176;</span> </div><br>
 <div id="w_wind">Wind Speed: {{weather?.wind.speed}}mph</div><br>
 <div id="w_hum">Humidity: {{weather?.main.humidity}}%</div><br>
-<div id="w_temp">Temprature: {{weather?.main.temp}}</div><br>
+
 </div>

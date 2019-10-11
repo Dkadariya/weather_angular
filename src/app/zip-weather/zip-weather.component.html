@@ -2,10 +2,12 @@
 <button (click)="getWeather()" class="btn btn-dark"> Submit </button>
 <br>
 <br>
-<ul>
-<li>City Name: {{weather.name}}</li>
-<li>Weather: {{weather.weather[0].main}}</li>
-<li>Wind Speed: {{weather.wind.speed}}</li>
-<li>Humidity: {{weather.main.humidity}}</li>
-<li>Temprature: {{weather.main.temp}}</li>
-</ul>
+<div class="w_details">
+
+<div id="w_name">{{weather?.name}}</div>
+<div id="w_date_time">{{fDate}}</div>
+<div id="w_weather">{{weather?.weather[0].main}}</div>
+<div id="w_wind">Wind Speed: {{weather?.wind.speed}}mph</div><br>
+<div id="w_hum">Humidity: {{weather?.main.humidity}}%</div><br>
+<div id="w_temp">Temprature: {{weather?.main.temp}}</div><br>
+</div>

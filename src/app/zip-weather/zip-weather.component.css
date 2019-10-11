@@ -3,3 +3,30 @@
     display: inline-block;
     margin-right: 1vw;
 }
+
+.w_details {
+    background-color: #f7f7f7;
+    border: 1px solid #3c3b3b;
+    border-radius: 20px;
+    /* display: inline-block; */
+    padding: 4%;
+    margin: 0px auto;   
+    width: 40%;
+    padding-top: 2%;
+}
+#w_name {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#w_weather {
+    margin-top: -6px;
+}
+
+#w_date_time{
+    margin-top: -6px;  
+}
+
+#w_wind,#w_hum,#w_temp {
+    float: right;
+}

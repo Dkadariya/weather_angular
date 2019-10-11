@@ -3,14 +3,15 @@
 <br>
 <br>
 <div class="w_details">
-
+    <div id='sun'>Sunrise: {{(weather?.sys.sunrise)*1000| date:'mediumTime'}}<br>Sunset: {{(weather?.sys.sunset)*1000| date:'mediumTime'}}</div>
 <div id="w_name">{{weather?.name}}</div>
 <div id="w_date_time">{{fDate}}</div>
 <div id="w_weather">{{weather?.weather[0].description}}</div>
 
+
 <div id="w_temp"><img src='http://openweathermap.org/img/w/{{weather?.weather[0].icon}}.png' alt="" id="w_icon">
     {{toFaren(weather?.main.temp)}}<span>&#176;</span> </div><br>
 <div id="w_wind">Wind Speed: {{weather?.wind.speed}}mph</div><br>
-<div id="w_hum">Humidity: {{weather?.main.humidity}}%</div><br>
+<div id="w_hum">Humidity: {{(weather?.main.humidity)/100|percent}}</div><br>
 
 </div>

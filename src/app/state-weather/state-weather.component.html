@@ -1,7 +1,13 @@
 <br>
 <br>
 <div class="container">
-  <input type="text" id='bb_input' class="form-control" [(ngModel)]="bbox" placeholder="Enter the bbox coordinates...">
+  <!--  <input type="text" id='bb_input' class="form-control" [(ngModel)]="bbox" placeholder="Enter the bbox coordinates..."> -->
+  <select class="custom-select" id="bb_input" [(ngModel)]="qState">
+    <option selected>Choose State...</option>
+    <option *ngFor="let s of states" [value]='s'>{{s}}</option>
+    <!-- <option value="2">Two</option>
+    <option value="3">Three</option> -->
+  </select>
   <button (click)="getWeather()" class="btn btn-dark"> Submit </button>
   <br>
   <br>

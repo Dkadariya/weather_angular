@@ -6,16 +6,17 @@ import { WeatherServices } from '../weather_services/weather-services.service';
   styleUrls: ['./state-weather.component.css']
 })
 export class StateWeatherComponent {
-  bbox;
+  qState;
   weather;
+  states = ['Illinois','Wisconsin','Florida','Tennessee','Ohio','Kentucky','Indiana', 'Massachusetts', 'Delaware', 'Rhode Island']
   constructor(private weatherServices: WeatherServices) {
-    weatherServices.getStateWeather('-85,38,-80,41,10')
+    weatherServices.getStateWeather('Ohio')
     .subscribe(data => {this.weather = data['list']; },
     error => {console.log(error); });
   }
 
   getWeather() {
-    this.weatherServices.getStateWeather(this.bbox)
+    this.weatherServices.getStateWeather(this.qState)
     .subscribe(data => {this.weather = data['list']; },
     error => {console.log(error); });
   }
